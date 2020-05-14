@@ -18,6 +18,7 @@ import Default from "./js/components/layout/Default";
 //
 
 import { createBrowserHistory } from "history";
+
 const hist = createBrowserHistory();
 const AppRoutes = ({ layout: Layout, component: Component, ...rest }) => {
   return (

@@ -54,7 +54,7 @@ function Footer() {
         Contact Us
       </Link>
       
-    </Typography>
+    </Typography> 
   );
 }
 
@@ -144,9 +144,7 @@ export default function Default() {
   const [open, setOpen] = React.useState(true); 
   const [auth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const openSettings = Boolean(anchorEl);
-
-  
+  const openSettings = Boolean(anchorEl);  
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -216,7 +214,9 @@ export default function Default() {
                 open={openSettings}
                 onClose={handleClose}
               >
-                <Avatar />
+                <MenuItem>
+                  <Avatar />
+                </MenuItem>
                 <Divider />
                 <MenuItem onClick={handleClose}>Profile</MenuItem>
                 <MenuItem onClick={handleClose}>Logout</MenuItem>

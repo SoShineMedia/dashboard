@@ -52,7 +52,7 @@ export default function Metric() {
       <Typography color="textSecondary" className={classes.depositContext}>
         Over Due
       </Typography>
-      <Typography component="p" variant="h4">
+      <Typography component="p" variant="h5">
         $3,024.00
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>

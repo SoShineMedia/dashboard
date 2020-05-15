@@ -7,6 +7,7 @@ import { Router, Route, Switch, Redirect } from "react-router-dom";
 
 import Default from "./js/components/layout/Default";
 import Dashboard from "./js/components/view/dashboard/Main";
+import Schedule from "./js/components/view/schedule/scheduleMain";
 //default landing page
 //import Home from "./components/view/Home";
 //dashboard home page
@@ -39,7 +40,7 @@ ReactDOM.render(
          {/*<AppRoutes exact path="/" layout={Default} component={Home} />*/}
          
          <Route path={"/"} component={Dashboard} />
-         <Route path={"/schedule"} component={Default} />
+         <Route path={"/schedule"} component={Schedule} />
          
          </Switch>      
      </Router>

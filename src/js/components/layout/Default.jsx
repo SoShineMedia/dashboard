@@ -261,16 +261,19 @@ export default function Default() {
             
             
             {/* Recent Orders */}
-            <Grid item xs={6}>
+            <Grid item xs={4}>
               <Paper className={classes.paper}>
-                <Timeline />
-              </Paper>
-            </Grid>
-            <Grid item xs={6}>
-              <Paper className={classes.paper}>
+                <h2>Upcoming Schedule</h2>
                 <Orders />
               </Paper>
             </Grid>
+            <Grid item xs={8}>
+              <Paper className={classes.paper}>
+                <h2>Activity Timeline</h2>
+                <Timeline />
+              </Paper>
+            </Grid>
+            
           </Grid>
           <Box pt={4}>
             <Footer />

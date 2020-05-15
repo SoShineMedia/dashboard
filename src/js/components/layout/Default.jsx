@@ -24,11 +24,12 @@ import Menu from '@material-ui/core/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 
 import { mainListItems, secondaryListItems } from '../common/listItems';
-import Chart from '../common/Chart';
+import Chart from '../view/dashboard/Chart';
 import Metric from '../view/dashboard/Metric';
-import Orders from '../common/Orders';
+//import Orders from '../common/Orders';
 import Avatar from '../common/Avatar';
 import Timeline from '../common/Timeline';
+import Stream from '../common/List';
 
 function Copyright() {
   return (
@@ -253,7 +254,7 @@ export default function Default() {
             {/* Recent metrics */}                
             <Metric />  
             {/* Chart */}
-            <Grid item xs={12} md={6} lg={6}>
+            <Grid item xs={12} md={6} lg={5}>
               <Paper className={fixedHeightPaper}>
                 <Chart />
               </Paper>
@@ -264,7 +265,7 @@ export default function Default() {
             <Grid item xs={4}>
               <Paper className={classes.paper}>
                 <h2>Upcoming Schedule</h2>
-                <Orders />
+                <Stream />
               </Paper>
             </Grid>
             <Grid item xs={8}>

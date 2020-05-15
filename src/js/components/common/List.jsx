@@ -8,6 +8,7 @@ import Avatar from '@material-ui/core/Avatar';
 import ImageIcon from '@material-ui/icons/Image';
 import WorkIcon from '@material-ui/icons/Work';
 import BeachAccessIcon from '@material-ui/icons/BeachAccess';
+import { Divider, ListSubheader } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,14 +23,19 @@ export default function FolderList() {
 
   return (
     <List className={classes.root}>
-      <ListItem>
+      <ListItem>        
         <ListItemAvatar>
           <Avatar>
             <ImageIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Photos" secondary="Jan 9, 2014" />
+        
+        <ListItemText primary="Meeting title" secondary="Address of event" />
+        <ListSubheader>Jan 19 | 9:30am</ListSubheader>
+        
+        
       </ListItem>
+      <Divider/>
       <ListItem>
         <ListItemAvatar>
           <Avatar>

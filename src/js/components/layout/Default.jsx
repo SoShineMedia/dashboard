@@ -18,12 +18,9 @@ import Link from '@material-ui/core/Link';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import EmailIcon from '@material-ui/icons/Email';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
-import AccountCircle from '@material-ui/icons/AccountCircle';
 
 import { mainListItems, secondaryListItems } from '../common/listItems';
+
 import Chart from '../common/Chart';
 import Deposits from '../common/Deposits';
 import Orders from '../common/Orders';
@@ -32,28 +29,12 @@ import Avatar from '../common/Avatar';
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {' Developed by '}
-      <Link color="inherit" href="https://soshinemedia.com/">
-        SoShine Media
-      </Link>
       {'Copyright © '}
+      <Link color="inherit" href="https://material-ui.com/">
+        Your Website
+      </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
-    </Typography>
-  );
-}
-function Footer() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      
-      <Link color="inherit" href="https://soshinemedia.com/">
-        About
-      </Link>
-      {' '}
-      <Link color="inherit" href="https://soshinemedia.com/">
-        Contact Us
-      </Link>
-      
     </Typography>
   );
 }
@@ -139,26 +120,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Default() {
+export default function Dashboard() {
   const classes = useStyles();
-  const [auth, open, setOpen] = React.useState(true);  
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const openSettings = Boolean(anchorEl);
-
-  
-
+  const [open, setOpen] = React.useState(true);
   const handleDrawerOpen = () => {
     setOpen(true);
   };
   const handleDrawerClose = () => {
     setOpen(false);
-  };
-  const handleMenu = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
   };
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
@@ -178,51 +147,12 @@ export default function Default() {
           </IconButton>
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
             Dashboard
-          </Typography>          
+          </Typography>
           <IconButton color="inherit">
             <Badge badgeContent={4} color="secondary">
               <NotificationsIcon />
             </Badge>
           </IconButton>
-          <IconButton color="inherit">
-            <Badge badgeContent={"9+"} color="secondary">
-              <EmailIcon />
-            </Badge>
-          </IconButton>
-          {auth && (
-          <div>
-          <IconButton
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleMenu}
-                color="inherit"
-              >
-                <AccountCircle />
-          </IconButton>
-          <Menu
-                id="menu-appbar"
-                anchorEl={anchorEl}
-                anchorOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                open={openSettings}
-                onClose={handleClose}
-              >
-                <Avatar />
-                <Divider />
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                <MenuItem onClick={handleClose}>Logout</MenuItem>
-                <Divider />
-                <MenuItem onClick={handleClose}>Settings</MenuItem>
-          </Menu>
-          </div> )}
         </Toolbar>
       </AppBar>
       <Drawer
@@ -266,9 +196,7 @@ export default function Default() {
             </Grid>
           </Grid>
           <Box pt={4}>
-            <Footer />
             <Copyright />
-            
           </Box>
         </Container>
       </main>

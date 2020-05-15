@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme)=>({
     flexDirection: 'column',
   },
   fixedHeight: {
-    height: 140,
+    height: 180,
   },
 }));
 
@@ -33,47 +33,52 @@ export default function Metric() {
   return (
     <React.Fragment>
       {/*<Title>Recent Deposits</Title>*/}
-      <Grid item xs={12} md={4} lg={2}>
+      <Grid item xs={12} md={6} lg={3}>
       <Paper className={fixedHeightMetric}>
+      <Typography color="textSecondary" className={classes.depositContext}>
+        Total hours
+      </Typography>
+      <Typography component="p" variant="h4">
+        350
+      </Typography>
+      <Typography color="textSecondary" className={classes.depositContext}>
+        billable ##|nonbillable ##
+      </Typography>
+      
+      </Paper>
+      </Grid>
+      <Grid item xs={12} md={3} lg={2}>
+      <Paper className={fixedHeightMetric}>
+      <Typography color="textSecondary" className={classes.depositContext}>
+        Over Due
+      </Typography>
       <Typography component="p" variant="h4">
         $3,024.00
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
-        on 15 March, 2019
+        from 100 clients
       </Typography>
       <div>
         <Link color="primary" href="#" onClick={preventDefault}>
-          View balance
+          View Accounts
         </Link>
       </div>
       </Paper>
       </Grid>
-      <Grid item xs={12} md={4} lg={2}>
+      <Grid item xs={12} md={3} lg={2}>
       <Paper className={fixedHeightMetric}>
+      <Typography color="textSecondary" className={classes.depositContext}>
+        Upcoming events
+      </Typography>
       <Typography component="p" variant="h4">
-        $3,024.00
+        5
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
-        on 15 March, 2019
+        next in 3 hours
       </Typography>
       <div>
         <Link color="primary" href="#" onClick={preventDefault}>
-          View balance
-        </Link>
-      </div>
-      </Paper>
-      </Grid>
-      <Grid item xs={12} md={4} lg={2}>
-      <Paper className={fixedHeightMetric}>
-      <Typography component="p" variant="h4">
-        $3,024.00
-      </Typography>
-      <Typography color="textSecondary" className={classes.depositContext}>
-        on 15 March, 2019
-      </Typography>
-      <div>
-        <Link color="primary" href="#" onClick={preventDefault}>
-          View balance
+          View schedule
         </Link>
       </div>
       </Paper>

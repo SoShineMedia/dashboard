@@ -39,7 +39,7 @@ ReactDOM.render(
          
          {/*<AppRoutes exact path="/" layout={Default} component={Home} />*/}
          
-         <Route path={"/"} component={Dashboard} />
+         <Route exact path={"/"} component={Dashboard} />
          <Route path={"/schedule"} component={Schedule} />
          
          </Switch>      

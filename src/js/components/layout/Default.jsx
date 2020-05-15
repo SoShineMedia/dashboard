@@ -25,9 +25,10 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 
 import { mainListItems, secondaryListItems } from '../common/listItems';
 import Chart from '../common/Chart';
-import Deposits from '../common/Deposits';
+import Metric from '../view/dashboard/Metric';
 import Orders from '../common/Orders';
 import Avatar from '../common/Avatar';
+import Timeline from '../common/Timeline';
 
 function Copyright() {
   return (
@@ -247,20 +248,25 @@ export default function Default() {
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
+       
+            
+            {/* Recent metrics */}                
+            <Metric />  
             {/* Chart */}
-            <Grid item xs={12} md={8} lg={9}>
+            <Grid item xs={12} md={6} lg={6}>
               <Paper className={fixedHeightPaper}>
                 <Chart />
               </Paper>
-            </Grid>
-            {/* Recent Deposits */}
-            <Grid item xs={12} md={4} lg={3}>
-              <Paper className={fixedHeightPaper}>
-                <Deposits />
+            </Grid>           
+            
+            
+            {/* Recent Orders */}
+            <Grid item xs={6}>
+              <Paper className={classes.paper}>
+                <Timeline />
               </Paper>
             </Grid>
-            {/* Recent Orders */}
-            <Grid item xs={12}>
+            <Grid item xs={6}>
               <Paper className={classes.paper}>
                 <Orders />
               </Paper>

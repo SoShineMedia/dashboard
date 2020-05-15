@@ -6,6 +6,7 @@ import { store } from './js/store/ReduxStore';
 import { Router, Route, Switch, Redirect } from "react-router-dom";
 
 import Default from "./js/components/layout/Default";
+import Dashboard from "./js/components/view/dashboard/Main";
 //default landing page
 //import Home from "./components/view/Home";
 //dashboard home page
@@ -37,7 +38,8 @@ ReactDOM.render(
          
          {/*<AppRoutes exact path="/" layout={Default} component={Home} />*/}
          
-         <Route path={"/"} component={Default} />
+         <Route path={"/"} component={Dashboard} />
+         <Route path={"/schedule"} component={Default} />
          
          </Switch>      
      </Router>

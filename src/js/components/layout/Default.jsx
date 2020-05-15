@@ -12,8 +12,7 @@ import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import Badge from '@material-ui/core/Badge';
 import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
+
 import Link from '@material-ui/core/Link';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
@@ -24,12 +23,8 @@ import Menu from '@material-ui/core/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 
 import { mainListItems, secondaryListItems } from '../common/listItems';
-import Chart from '../view/dashboard/Chart';
-import Metric from '../view/dashboard/Metric';
-//import Orders from '../common/Orders';
+
 import Avatar from '../common/Avatar';
-import Timeline from '../common/Timeline';
-import Stream from '../common/List';
 
 function Copyright() {
   return (
@@ -141,7 +136,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Default() {
+export default function Default(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true); 
   const [auth] = React.useState(true);
@@ -161,7 +156,7 @@ export default function Default() {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
+  //const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
   return (
     <div className={classes.root}>
@@ -248,34 +243,7 @@ export default function Default() {
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
-          <Grid container spacing={3}>
-       
-            
-            {/* Recent metrics */}                
-            <Metric />  
-            {/* Chart */}
-            <Grid item xs={12} md={6} lg={5}>
-              <Paper className={fixedHeightPaper}>
-                <Chart />
-              </Paper>
-            </Grid>           
-            
-            
-            {/* Recent Orders */}
-            <Grid item xs={4}>
-              <Paper className={classes.paper}>
-                <h2>Upcoming Schedule</h2>
-                <Stream />
-              </Paper>
-            </Grid>
-            <Grid item xs={8}>
-              <Paper className={classes.paper}>
-                <h2>Activity Timeline</h2>
-                <Timeline />
-              </Paper>
-            </Grid>
-            
-          </Grid>
+          {props.page}
           <Box pt={4}>
             <Footer />
             <Copyright />

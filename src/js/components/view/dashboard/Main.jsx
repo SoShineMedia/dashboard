@@ -70,6 +70,6 @@ function Display() {
 export default function Dashboard() {
   
   return (
-        <Default page={Display} val={"coooooool"} />
+        <Default page={Display()} val={"coooooool"} />
   );
 }

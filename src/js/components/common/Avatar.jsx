@@ -28,7 +28,7 @@ export default function Avatar() {
 
   return (
     <div>
-        <div className={classes.root}>
+        <div className={classes.root}> 
             <Img alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.large}  />
             <p>
                 <strong>Full Name</strong>

@@ -8,6 +8,7 @@ import { Router, Route, Switch, Redirect } from "react-router-dom";
 import Default from "./js/components/layout/Default";
 import Dashboard from "./js/components/view/dashboard/Main";
 import Schedule from "./js/components/view/schedule/scheduleMain";
+import EventDetail from "./js/components/view/schedule/eventDetails";
 //default landing page
 //import Home from "./components/view/Home";
 //dashboard home page

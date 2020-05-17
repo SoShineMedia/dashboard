@@ -41,6 +41,7 @@ ReactDOM.render(
          
          <Route exact path={"/"} component={Dashboard} />
          <Route path={"/schedule"} component={Schedule} />
+         <Route path={"/event"} component={EventDetail} />
          
          </Switch>      
      </Router>

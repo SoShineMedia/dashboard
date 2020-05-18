@@ -8,6 +8,7 @@ import Paper from '@material-ui/core/Paper';
 import Default from '../../layout/Default';
 import Typography from '@material-ui/core/Typography';
 import UserCard from '../../common/UserCard';
+import Table from '../../common/Table';
 //import Stream from '../../common/List';
 
 const useStyles = makeStyles((theme) => ({
@@ -79,7 +80,9 @@ function Display() {
             <Grid item xs={12} md={5} lg={3}>
                 <UserCard/>
             </Grid>
-            
+            <Grid item xs={12} md={7} lg={9}>
+                <Table />
+            </Grid>
             
           </Grid>
           

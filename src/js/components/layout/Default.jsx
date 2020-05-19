@@ -34,6 +34,7 @@ import { mainListItems, secondaryListItems } from '../common/listItems';
 
 import Avatar from '../common/Avatar';
 
+
 const actions = [
   { icon: <FileCopyIcon />, name: "Add Item" },
   { icon: <SaveIcon />, name: "Add Another Item" },
@@ -69,6 +70,7 @@ function Footer() {
     </Typography> 
   );
 }
+
 
 function SpeedDials() {
   const classes = useStyles();
@@ -110,6 +112,7 @@ function SpeedDials() {
     </div>
   );
 }
+
 
 const drawerWidth = 240;
 
@@ -190,6 +193,7 @@ const useStyles = makeStyles((theme) => ({
   fixedHeight: {
     height: 240,
   },
+
   radioGroup: {
     margin: theme.spacing(1, 0)
   },
@@ -204,6 +208,7 @@ const useStyles = makeStyles((theme) => ({
       left: theme.spacing(2)
     }
   }
+
 }));
 
 export default function Default(props) {
@@ -315,7 +320,9 @@ export default function Default(props) {
         <Container maxWidth="lg" className={classes.container}>
           {props.page}
           <Box pt={4}>
+
             <SpeedDials />
+
             <Footer />
             <Copyright />
             

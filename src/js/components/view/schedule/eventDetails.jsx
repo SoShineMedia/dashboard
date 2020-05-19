@@ -7,8 +7,14 @@ import Paper from '@material-ui/core/Paper';
 
 import Default from '../../layout/Default';
 import Typography from '@material-ui/core/Typography';
+
+import UserCard from '../../common/UserCard';
+import Table from '../../common/Table';
+//import Stream from '../../common/List';
+
 import Timeline from '../../common/Timeline';
 import Stream from '../../common/List';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -34,7 +40,9 @@ function Display() {
           <Grid container spacing={3}>
        
             {/* Recent Orders */}
-            <Grid item xs={12} md={12} lg={12}>
+
+            <Grid item xs={12} md={7} lg={9}>
+
               <Paper className={classes.paper}>
                                
                 <Typography variant="h4" >
@@ -76,7 +84,14 @@ function Display() {
                 
               </Paper>
             </Grid>
-            
+
+            <Grid item xs={12} md={5} lg={3}>
+                <UserCard/>
+            </Grid>
+            <Grid item xs={12} md={12} lg={9}>
+                <Table />
+            </Grid>
+
             
           </Grid>
           

@@ -22,7 +22,9 @@ export const store = createStore(combineReducers(
     document: reducer_document,
     documentList: reducer_documentList, 
     client: reducer_client, 
-    clientList: reducer_clientList, 
+    clientList: reducer_clientList,
+    event: reducer_event,
+    eventList: reducer_eventList,
 
 
 }));

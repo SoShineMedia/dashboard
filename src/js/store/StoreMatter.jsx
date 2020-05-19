@@ -44,7 +44,7 @@ let initialState_StoreAccList =
   momentUpdated: null
 };
 
-export function reducer_accList (state = initialState_StoreAccList, action) 
+export function reducer_matter (state = initialState_StoreAccList, action) 
 {
   switch(action.type)
   {

@@ -10,6 +10,8 @@ import { reducer_document } from './StoreDocument';
 import { reducer_documentList } from './StoreDocumentList';
 import { reducer_client } from './StoreClient';
 import { reducer_clientList } from './StoreClientList';
+import { reducer_event } from './StoreClient';
+import { reducer_eventList } from './StoreClientList';
 
 // store -----------------------------------------------------------------
 //TODO: build out redux functionality

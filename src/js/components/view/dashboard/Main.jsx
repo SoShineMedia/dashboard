@@ -1,4 +1,5 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -66,10 +67,15 @@ function Display() {
   );
 }
 
-
-export default function Dashboard() {
+function Dashboard() {
   
   return (
         <Default page={Display()} val={"coooooool"} />
   );
 }
+
+export default connect((state) => {
+  return ({
+    data: state.user,
+  })
+})(Dashboard);

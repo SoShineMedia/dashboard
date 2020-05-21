@@ -3,15 +3,15 @@ import { createStore, combineReducers } from 'redux';
 
 import { reducer_user } from './StoreUser';
 
-import { reducer_firm } from './StoreFirm';
+import { reducer_firm } from './reducer/StoreFirm';
 import { reducer_matter } from './StoreMatter';
 import { reducer_matterList } from './StoreMatterList';
-import { reducer_document } from './StoreDocument';
-import { reducer_documentList } from './StoreDocumentList';
-import { reducer_client } from './StoreClient';
-import { reducer_clientList } from './StoreClientList';
-import { reducer_event } from './StoreClient';
-import { reducer_eventList } from './StoreClientList';
+import { reducer_document } from './reducer/StoreDocument';
+import { reducer_documentList } from './reducer/StoreDocumentList';
+import { reducer_client } from './reducer/StoreClient';
+import { reducer_clientList } from './reducer/StoreClientList';
+import { reducer_event } from './reducer/StoreClient';
+import { reducer_eventList } from './reducer/StoreClientList';
 
 // store -----------------------------------------------------------------
 //TODO: build out redux functionality

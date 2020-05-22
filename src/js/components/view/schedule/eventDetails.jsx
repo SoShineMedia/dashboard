@@ -10,11 +10,6 @@ import Typography from '@material-ui/core/Typography';
 
 import UserCard from '../../common/UserCard';
 import Table from '../../common/Table';
-//import Stream from '../../common/List';
-
-import Timeline from '../../common/Timeline';
-import Stream from '../../common/List';
-
 
 const useStyles = makeStyles((theme) => ({
     root: {

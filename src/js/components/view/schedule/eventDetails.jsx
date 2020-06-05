@@ -10,11 +10,6 @@ import Typography from '@material-ui/core/Typography';
 
 import UserCard from '../../common/UserCard';
 import Table from '../../common/Table';
-//import Stream from '../../common/List';
-
-import Timeline from '../../common/Timeline';
-import Stream from '../../common/List';
-
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -57,31 +52,21 @@ function Display() {
                     Address
                 </Typography>
                 <Typography variant="subtitle1" gutterBottom>
-                    subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
+                    Kingston 10
                 </Typography>
                 <Typography variant="h6" gutterBottom>
                     Subject matter
                 </Typography>
                 <Typography variant="subtitle2" gutterBottom>
-                    subtitle2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
+                    Civil dispute meeting
                 </Typography>
                 <Typography variant="h6" gutterBottom>
-                    h6. Heading
+                    Details
                 </Typography>
                 <Typography variant="body1" gutterBottom>
-                    body1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                    unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam
-                    dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
+                    Here are the details for this event. Here are the details for this event.Here are the details for this event.Here are the details for this event.
                 </Typography>
-                <Typography variant="h6" gutterBottom>
-                    h6. Heading
-                </Typography>
-                <Typography variant="body2" gutterBottom>
-                    body2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                    unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam
-                    dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
-                </Typography>
-                
+                                
               </Paper>
             </Grid>
 

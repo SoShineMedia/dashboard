@@ -1,5 +1,6 @@
 import axios from 'axios';
-import config from 'config';
+
+import config from '../../jsconfig.json';
 
 export const request = async (endpoint, params, type) => 
 {

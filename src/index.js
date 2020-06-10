@@ -13,7 +13,7 @@ import EventDetail from "./js/components/view/schedule/eventDetails";
 import Matters from "./js/components/view/matter/matterMain";
 import Clients from "./js/components/view/client/clientList";
 import Invoices from "./js/components/view/invoice/invoiceList";
-
+import Profile from "./js/components/view/user/userDetail";
 //default landing page
 //import Home from "./components/view/Home";
 //dashboard home page
@@ -51,6 +51,7 @@ ReactDOM.render(
          <Route path={"/matters"} component={Matters} />
          <Route path={"/clients"} component={Clients} />
          <Route path={"/invoices"} component={Invoices} />
+         <Route path={"/profile"} component={Profile} />
          
          
          </Switch>      

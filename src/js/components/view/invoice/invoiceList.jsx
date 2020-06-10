@@ -36,7 +36,7 @@ function Display() {
             {/* Recent Orders */}
             <Grid item xs={12} md={12} lg={12}>
               <Paper className={classes.paper}>
-                <h2>My Cases</h2>
+                <h2>Client Invoices</h2>
                 <Table />
               </Paper>
             </Grid>

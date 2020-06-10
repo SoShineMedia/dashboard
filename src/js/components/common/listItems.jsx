@@ -19,36 +19,46 @@ function ListItemLink(props) {
 export const mainListItems = (
   <div>
     <ListItem button>
-      <ListItemIcon>
-        <DashboardIcon />
-      </ListItemIcon>
-      <ListItemText primary="Dashboard" />
+      <ListItemLink href="/">
+        <ListItemIcon>
+          <DashboardIcon />
+        </ListItemIcon>
+      
+        <ListItemText primary="Dashboard" />
+      </ListItemLink>
+      
     </ListItem>
     <ListItem button>
-      <ListItemIcon>
-        <EventIcon />
-      </ListItemIcon>
       <ListItemLink href="/schedule">
-        <ListItemText primary="Schedule" />
+        <ListItemIcon>
+          <EventIcon />
+        </ListItemIcon>        
+          <ListItemText primary="Schedule" />
       </ListItemLink>
     </ListItem>
     <ListItem button>
-      <ListItemIcon>
-        <PeopleIcon />
-      </ListItemIcon>
-      <ListItemText primary="Clients" />
+      <ListItemLink href="/clients">
+        <ListItemIcon>
+          <PeopleIcon />
+        </ListItemIcon>
+        <ListItemText primary="Clients" />
+      </ListItemLink>
     </ListItem>
     <ListItem button>
-      <ListItemIcon>
-        <ShoppingCartIcon />
-      </ListItemIcon>
-      <ListItemText primary="Invoices" />
+      <ListItemLink href="/invoices">
+        <ListItemIcon>
+          <ShoppingCartIcon />
+        </ListItemIcon>
+        <ListItemText primary="Invoices" />
+      </ListItemLink>
     </ListItem>
     <ListItem button>
-      <ListItemIcon>
-        <LayersIcon />
-      </ListItemIcon>
-      <ListItemText primary="Matters" />
+      <ListItemLink href="/matters">
+        <ListItemIcon>
+          <LayersIcon />
+        </ListItemIcon>
+        <ListItemText primary="Matters" />
+      </ListItemLink>
     </ListItem>
   </div>
 );

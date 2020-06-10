@@ -9,7 +9,7 @@ import Default from '../../layout/Default';
 //import Timeline from '../../common/Timeline';
 //import Stream from '../../common/List';
 import Table from '../../common/Table';
-import InfoTile from '../../common/InfoTile';
+//import InfoTile from '../../common/InfoTile';
 import Timeline from '../../common/Timeline';
 import UserCard from '../../common/UserCard';
 

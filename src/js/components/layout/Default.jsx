@@ -49,7 +49,7 @@ function Copyright() {
       <Link color="inherit" href="https://soshinemedia.com/">
         SoShine Media
       </Link>
-      {'Copyright © '}
+      {' Copyright © '}
       {new Date().getFullYear()}
       {'.'}
     </Typography>

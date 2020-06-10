@@ -5,10 +5,15 @@ import {Provider, connect} from 'react-redux';
 import { store } from './js/store/ReduxStore';
 import { Router, Route, Switch, Redirect } from "react-router-dom";
 
-import Default from "./js/components/layout/Default";
+//import Default from "./js/components/layout/Default";
 import Dashboard from "./js/components/view/dashboard/Main";
 import Schedule from "./js/components/view/schedule/scheduleMain";
 import EventDetail from "./js/components/view/schedule/eventDetails";
+
+import Matters from "./js/components/view/matter/matterMain";
+import Clients from "./js/components/view/client/clientList";
+import Invoices from "./js/components/view/invoice/invoiceList";
+
 //default landing page
 //import Home from "./components/view/Home";
 //dashboard home page
@@ -43,6 +48,10 @@ ReactDOM.render(
          <Route exact path={"/"} component={Dashboard} />
          <Route path={"/schedule"} component={Schedule} />
          <Route path={"/event"} component={EventDetail} />
+         <Route path={"/matters"} component={Matters} />
+         <Route path={"/clients"} component={Clients} />
+         <Route path={"/invoices"} component={Invoices} />
+         
          
          </Switch>      
      </Router>

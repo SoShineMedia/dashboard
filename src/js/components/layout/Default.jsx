@@ -2,6 +2,9 @@ import React from 'react';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import { useHistory } from "react-router-dom";
+
+
 import Drawer from '@material-ui/core/Drawer';
 import Box from '@material-ui/core/Box';
 import AppBar from '@material-ui/core/AppBar';
@@ -49,7 +52,7 @@ function Copyright() {
       <Link color="inherit" href="https://soshinemedia.com/">
         SoShine Media
       </Link>
-      {'Copyright © '}
+      {' Copyright © '}
       {new Date().getFullYear()}
       {'.'}
     </Typography>
@@ -231,6 +234,11 @@ export default function Default(props) {
   const handleClose = () => {
     setAnchorEl(null);
   };
+  const history = useHistory();
+  const viewProfile = () => {
+    handleClose();    
+    history.push("/profile");
+  }
   //const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
   return (
@@ -290,7 +298,7 @@ export default function Default(props) {
                   <Avatar />
                 </MenuItem>
                 <Divider />
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
+                <MenuItem onClick={viewProfile}>Profile</MenuItem>
                 <MenuItem onClick={handleClose}>Logout</MenuItem>
                 <Divider />
                 <MenuItem onClick={handleClose}>Settings</MenuItem>

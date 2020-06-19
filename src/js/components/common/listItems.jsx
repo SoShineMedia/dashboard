@@ -75,16 +75,20 @@ export const secondaryListItems = (
       </ListItemLink>
     </ListItem>
     <ListItem button>
+    <ListItemLink href="/creatematter">
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
       <ListItemText primary="New Event" />
+      </ListItemLink>
     </ListItem>
     <ListItem button>
+    <ListItemLink href="/creatematter">
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
       <ListItemText primary="New Report" />
+      </ListItemLink>
     </ListItem>
   </div>
 );

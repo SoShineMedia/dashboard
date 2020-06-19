@@ -258,12 +258,12 @@ export default function Default(props) {
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
             Dashboard
           </Typography>          
-          <IconButton color="inherit">
+          <IconButton href="/notifications" color="inherit">
             <Badge badgeContent={4} color="secondary">
               <NotificationsIcon />
             </Badge>
           </IconButton>
-          {false && (<IconButton color="inherit">
+          {false && (<IconButton  color="inherit">
             <Badge badgeContent={"9+"} color="secondary">
               <EmailIcon />
             </Badge>
@@ -295,7 +295,7 @@ export default function Default(props) {
                 onClose={handleClose}
               >
                 <MenuItem>
-                  <Avatar />
+                  <Avatar close={handleClose} />
                 </MenuItem>
                 <Divider />
                 <MenuItem onClick={viewProfile}>Profile</MenuItem>

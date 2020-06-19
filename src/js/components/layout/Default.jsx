@@ -239,6 +239,10 @@ export default function Default(props) {
     handleClose();    
     history.push("/profile");
   }
+  const viewSettings = () => {
+    handleClose();    
+    history.push("/settings");
+  }
   //const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
   return (
@@ -301,7 +305,7 @@ export default function Default(props) {
                 <MenuItem onClick={viewProfile}>Profile</MenuItem>
                 <MenuItem onClick={handleClose}>Logout</MenuItem>
                 <Divider />
-                <MenuItem onClick={handleClose}>Settings</MenuItem>
+                <MenuItem  onClick={viewSettings}>Settings</MenuItem>
           </Menu>
           </div> )}
         </Toolbar>

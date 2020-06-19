@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Img from '@material-ui/core/Avatar';
+import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Avatar() {
+export default function Avatar(props) {
   const classes = useStyles();
 
   return (
@@ -37,7 +38,7 @@ export default function Avatar() {
         <p className={classes.center}>
             <span>Lawyer</span>
             <br/>
-            <span>Law Firm</span>
+            <Link onClick={props.close} variant="inherited" color="primary" href="/firm">Law Firm</Link>
         </p>
     </div>
     

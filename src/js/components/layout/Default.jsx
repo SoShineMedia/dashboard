@@ -239,6 +239,10 @@ export default function Default(props) {
     handleClose();    
     history.push("/profile");
   }
+  const viewSettings = () => {
+    handleClose();    
+    history.push("/settings");
+  }
   //const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
   return (
@@ -258,16 +262,16 @@ export default function Default(props) {
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
             Dashboard
           </Typography>          
-          <IconButton color="inherit">
+          <IconButton href="/notifications" color="inherit">
             <Badge badgeContent={4} color="secondary">
               <NotificationsIcon />
             </Badge>
           </IconButton>
-          <IconButton color="inherit">
+          {false && (<IconButton  color="inherit">
             <Badge badgeContent={"9+"} color="secondary">
               <EmailIcon />
             </Badge>
-          </IconButton>
+          </IconButton>)}
           {auth && (
           <div>
           <IconButton
@@ -295,13 +299,13 @@ export default function Default(props) {
                 onClose={handleClose}
               >
                 <MenuItem>
-                  <Avatar />
+                  <Avatar close={handleClose} />
                 </MenuItem>
                 <Divider />
                 <MenuItem onClick={viewProfile}>Profile</MenuItem>
                 <MenuItem onClick={handleClose}>Logout</MenuItem>
                 <Divider />
-                <MenuItem onClick={handleClose}>Settings</MenuItem>
+                <MenuItem  onClick={viewSettings}>Settings</MenuItem>
           </Menu>
           </div> )}
         </Toolbar>

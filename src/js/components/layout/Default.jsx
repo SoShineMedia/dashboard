@@ -263,11 +263,11 @@ export default function Default(props) {
               <NotificationsIcon />
             </Badge>
           </IconButton>
-          <IconButton color="inherit">
+          {false && (<IconButton color="inherit">
             <Badge badgeContent={"9+"} color="secondary">
               <EmailIcon />
             </Badge>
-          </IconButton>
+          </IconButton>)}
           {auth && (
           <div>
           <IconButton

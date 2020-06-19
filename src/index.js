@@ -16,8 +16,11 @@ import CreateMatter from "./js/components/view/matter/createMatter";
 
 import Clients from "./js/components/view/client/clientList";
 import Invoices from "./js/components/view/invoice/invoiceList";
+
 import Profile from "./js/components/view/user/userDetail";
+
 import Notification from "./js/components/view/user/userNotifications";
+
 
 //default landing page
 //import Home from "./components/view/Home";
@@ -56,9 +59,12 @@ ReactDOM.render(
          <Route path={"/matters"} component={Matters} />
          <Route path={"/clients"} component={Clients} />
          <Route path={"/invoices"} component={Invoices} />
+
          <Route path={"/profile"} component={Profile} />
+
          <Route path={"/notifications"} component={Notification} />
          <Route path={"/settings"} component={Settings} />
+
          
          {/**CRUD CREATE UPDATE */}
          <Route path={"/createMatter"} component={CreateMatter} />

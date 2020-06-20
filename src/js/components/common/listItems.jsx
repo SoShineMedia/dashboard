@@ -67,22 +67,28 @@ export const secondaryListItems = (
   <div>
     <ListSubheader>Tools</ListSubheader>
     <ListItem button>
-      <ListItemIcon>
-        <AssignmentIcon />
-      </ListItemIcon>
-      <ListItemText primary="Create Matter" />
+      <ListItemLink href="/creatematter">
+        <ListItemIcon>
+          <AssignmentIcon />
+        </ListItemIcon>
+        <ListItemText primary="New Matter" />
+      </ListItemLink>
     </ListItem>
     <ListItem button>
+    <ListItemLink href="/creatematter">
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Create Schedule Item" />
+      <ListItemText primary="New Event" />
+      </ListItemLink>
     </ListItem>
     <ListItem button>
+    <ListItemLink href="/creatematter">
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Create Report" />
+      <ListItemText primary="New Report" />
+      </ListItemLink>
     </ListItem>
   </div>
 );

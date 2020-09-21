@@ -7,8 +7,9 @@ import Paper from '@material-ui/core/Paper';
 
 import Default from '../../layout/Default';
 import Typography from '@material-ui/core/Typography';
-import Timeline from '../../common/Timeline';
-import Stream from '../../common/List';
+
+import UserCard from '../../common/UserCard';
+import Table from '../../common/Table';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -34,7 +35,9 @@ function Display() {
           <Grid container spacing={3}>
        
             {/* Recent Orders */}
-            <Grid item xs={12} md={12} lg={12}>
+
+            <Grid item xs={12} md={7} lg={9}>
+
               <Paper className={classes.paper}>
                                
                 <Typography variant="h4" >
@@ -49,34 +52,31 @@ function Display() {
                     Address
                 </Typography>
                 <Typography variant="subtitle1" gutterBottom>
-                    subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
+                    Kingston 10
                 </Typography>
                 <Typography variant="h6" gutterBottom>
                     Subject matter
                 </Typography>
                 <Typography variant="subtitle2" gutterBottom>
-                    subtitle2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
+                    Civil dispute meeting
                 </Typography>
                 <Typography variant="h6" gutterBottom>
-                    h6. Heading
+                    Details
                 </Typography>
                 <Typography variant="body1" gutterBottom>
-                    body1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                    unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam
-                    dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
+                    Here are the details for this event. Here are the details for this event.Here are the details for this event.Here are the details for this event.
                 </Typography>
-                <Typography variant="h6" gutterBottom>
-                    h6. Heading
-                </Typography>
-                <Typography variant="body2" gutterBottom>
-                    body2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                    unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam
-                    dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
-                </Typography>
-                
+                                
               </Paper>
             </Grid>
-            
+
+            <Grid item xs={12} md={5} lg={3}>
+                <UserCard/>
+            </Grid>
+            <Grid item xs={12} md={12} lg={9}>
+                <Table />
+            </Grid>
+
             
           </Grid>
           

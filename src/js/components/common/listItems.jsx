@@ -19,36 +19,46 @@ function ListItemLink(props) {
 export const mainListItems = (
   <div>
     <ListItem button>
-      <ListItemIcon>
-        <DashboardIcon />
-      </ListItemIcon>
-      <ListItemText primary="Dashboard" />
+      <ListItemLink href="/">
+        <ListItemIcon>
+          <DashboardIcon />
+        </ListItemIcon>
+      
+        <ListItemText primary="Dashboard" />
+      </ListItemLink>
+      
     </ListItem>
     <ListItem button>
-      <ListItemIcon>
-        <EventIcon />
-      </ListItemIcon>
       <ListItemLink href="/schedule">
-        <ListItemText primary="Schedule" />
+        <ListItemIcon>
+          <EventIcon />
+        </ListItemIcon>        
+          <ListItemText primary="Schedule" />
       </ListItemLink>
     </ListItem>
     <ListItem button>
-      <ListItemIcon>
-        <PeopleIcon />
-      </ListItemIcon>
-      <ListItemText primary="Clients" />
+      <ListItemLink href="/clients">
+        <ListItemIcon>
+          <PeopleIcon />
+        </ListItemIcon>
+        <ListItemText primary="Clients" />
+      </ListItemLink>
     </ListItem>
     <ListItem button>
-      <ListItemIcon>
-        <ShoppingCartIcon />
-      </ListItemIcon>
-      <ListItemText primary="Invoices" />
+      <ListItemLink href="/invoices">
+        <ListItemIcon>
+          <ShoppingCartIcon />
+        </ListItemIcon>
+        <ListItemText primary="Invoices" />
+      </ListItemLink>
     </ListItem>
     <ListItem button>
-      <ListItemIcon>
-        <LayersIcon />
-      </ListItemIcon>
-      <ListItemText primary="Matters" />
+      <ListItemLink href="/matters">
+        <ListItemIcon>
+          <LayersIcon />
+        </ListItemIcon>
+        <ListItemText primary="Matters" />
+      </ListItemLink>
     </ListItem>
   </div>
 );
@@ -57,22 +67,28 @@ export const secondaryListItems = (
   <div>
     <ListSubheader>Tools</ListSubheader>
     <ListItem button>
-      <ListItemIcon>
-        <AssignmentIcon />
-      </ListItemIcon>
-      <ListItemText primary="Create Matter" />
+      <ListItemLink href="/creatematter">
+        <ListItemIcon>
+          <AssignmentIcon />
+        </ListItemIcon>
+        <ListItemText primary="New Matter" />
+      </ListItemLink>
     </ListItem>
     <ListItem button>
+    <ListItemLink href="/creatematter">
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Create Schedule Item" />
+      <ListItemText primary="New Event" />
+      </ListItemLink>
     </ListItem>
     <ListItem button>
+    <ListItemLink href="/creatematter">
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Create Report" />
+      <ListItemText primary="New Report" />
+      </ListItemLink>
     </ListItem>
   </div>
 );

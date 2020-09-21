@@ -13,6 +13,7 @@ import { reducer_clientList } from './reducers/StoreClientList';
 import { reducer_event } from './reducers/StoreClient';
 import { reducer_eventList } from './reducers/StoreClientList';
 
+
 // store -----------------------------------------------------------------
 //TODO: build out redux functionality
 export const store = createStore(combineReducers(
@@ -27,6 +28,5 @@ export const store = createStore(combineReducers(
     clientList: reducer_clientList,
     event: reducer_event,
     eventList: reducer_eventList,
-
 
 }));
